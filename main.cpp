@@ -4,9 +4,9 @@
 double mean (vector<double> series);
 double median(vector<double> series);
 
-int main()
-{
 
+int main() //Computes mean and median of a series of temperatures
+{
     vector<double> temps;
     for (double temp; cin>>temp;)
         temps.push_back(temp);
@@ -24,7 +24,6 @@ double mean (vector<double> series)
     average = sum / series.size();
 
     return average;
-
 }
 
 double median(vector<double> series)
